@@ -6,11 +6,11 @@ const routes: RouteRecordRaw[] = [
     name: 'home',
     component: () => import('@/pages/Home.vue')
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes
-})
+});
 
 export default router;

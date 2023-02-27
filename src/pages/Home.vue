@@ -1,6 +1,6 @@
 <script lang='ts' setup>
 import Test from '@/components/Test.vue';
-import { useStore } from '@/store';
+import { useStore } from '@/store'
 const store = useStore();
 </script>
 
