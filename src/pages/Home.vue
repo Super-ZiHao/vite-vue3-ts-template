@@ -1,5 +1,4 @@
 <script lang='ts' setup>
-import Test from '@/components/Test.vue';
 import appStore from '@/store';
 import { storeToRefs } from 'pinia';
 import { successMessage } from '@/utils';
@@ -12,9 +11,9 @@ const { add, remove } = appStore.testStore;
   <Test />
   <div>{{ text }}</div>
   <div>{{ num }}</div>
-  <el-button @click="add">+1</el-button>
-  <el-button @click="remove">-1</el-button>
-  <el-button type="success" @click="successMessage">Success</el-button>
+  <ElButton @click="add">+1</ElButton>
+  <ElButton @click="remove">-1</ElButton>
+  <ElButton type="success" @click="successMessage">Success</ElButton>
 </template>
 
 <style lang='scss' scoped>

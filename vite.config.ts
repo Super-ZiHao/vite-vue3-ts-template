@@ -10,10 +10,13 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      resolvers: [ElementPlusResolver()]
+      resolvers: [ElementPlusResolver()],
+      dts: 'src/types/auto-imports.d.ts' // 用于生成自动导入到类型，方便代码提示
     }),
     Components({
-      resolvers: [ElementPlusResolver()]
+      resolvers: [ElementPlusResolver()],
+      dirs: ['src/components'], // 搜索自动导入组件的范围
+      dts: 'src/types/components.d.ts'
     })
   ],
   resolve: {

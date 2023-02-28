@@ -1,5 +1,4 @@
 import appStore from '@/store';
-import { ElMessage } from 'element-plus';
 import { storeToRefs } from 'pinia';
 
 export const successMessage = () => {
