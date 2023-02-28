@@ -8,6 +8,7 @@ const store = useStore();
   <div>Home</div>
   <Test />
   <div>{{ store.text }}</div>
+  <el-button type="success">Success</el-button>
 </template>
 
 <style lang='scss' scoped>
