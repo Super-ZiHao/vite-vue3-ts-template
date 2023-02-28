@@ -1,7 +1,10 @@
-import { defineStore } from 'pinia';
+import testStore from "./testStore";
 
-export const useStore = defineStore('home', {
-  state: () => ({
-    text: '使用pinia'
-  })
-});
+interface AppStore {
+  testStore: ReturnType<typeof testStore>
+}
+const appStore: AppStore = {} as AppStore;
+export const registerStore = () => {
+  appStore.testStore = testStore();
+};
+export default appStore;
