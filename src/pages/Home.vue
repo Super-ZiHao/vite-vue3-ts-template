@@ -16,6 +16,4 @@ const { add, remove } = appStore.testStore;
   <ElButton type="success" @click="successMessage">Success</ElButton>
 </template>
 
-<style lang='scss' scoped>
-
-</style>
+<style lang='scss' scoped></style>
