@@ -12,5 +12,10 @@
   },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
-  }
+  },
+  "stylelint.validate": [
+    "css",
+    "scss",
+  ],
+  "stylelint.customSyntax": "postcss-scss"
 }
