@@ -1,4 +1,4 @@
-import testStore from "./testStore";
+import testStore from './testStore';
 
 interface AppStore {
   testStore: ReturnType<typeof testStore>
