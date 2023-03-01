@@ -25,7 +25,11 @@ if [ -z "$husky_skip_init" ]; then
   exitCode="$?"
 
   if [ $exitCode != 0 ]; then
-    echo "husky - $hook_name hook exited with code $exitCode (error)"
+    echo "
+      错误名:($hook_name) 
+      有($exitCode)处错误
+      使用 npm run lint:fix 修复
+    "
   fi
 
   if [ $exitCode = 127 ]; then
