@@ -22,5 +22,7 @@ module.exports = {
     indent: 'off',
     'no-multiple-empty-lines': 'error',
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 3 }],
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-undef': 'off',
   },
 };

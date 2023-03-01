@@ -1,7 +1,7 @@
 <script lang='ts' setup>
 import appStore from '@/store';
-import { storeToRefs } from 'pinia';
 import { successMessage } from '@/utils';
+
 const { text, num } = storeToRefs(appStore.testStore);
 const { add, remove } = appStore.testStore;
 </script>

@@ -11,7 +11,8 @@ export default defineConfig({
     vue(),
     AutoImport({
       resolvers: [ElementPlusResolver()],
-      dts: 'src/types/auto-imports.d.ts' // 用于生成自动导入到类型，方便代码提示
+      dts: 'src/types/auto-imports.d.ts', // 用于生成自动导入到类型，方便代码提示
+      imports: ['vue', 'pinia', 'vue-router'],
     }),
     Components({
       resolvers: [ElementPlusResolver()],

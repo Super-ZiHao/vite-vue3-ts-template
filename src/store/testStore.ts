@@ -1,6 +1,3 @@
-import { defineStore } from 'pinia';
-import { ref } from 'vue';
-
 const testStore = defineStore('home', () => {
   const text = ref('使用pinia');
   const num = ref(1);
