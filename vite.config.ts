@@ -6,11 +6,13 @@ import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 import viteEslint from 'vite-plugin-eslint';
 import viteStylelint from 'vite-plugin-stylelint';
+import { optimizeCssModules } from 'vite-plugin-optimize-css-modules';
 // https://vitejs.dev/config/
 export default defineConfig({
   mode: 'development',
   plugins: [
     vue(),
+    optimizeCssModules(),
     AutoImport({
       resolvers: [ElementPlusResolver()],
       dts: 'src/types/auto-imports.d.ts', // 用于生成自动导入到类型，方便代码提示
