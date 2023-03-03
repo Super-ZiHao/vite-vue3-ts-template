@@ -16,6 +16,7 @@
   "stylelint.validate": [
     "css",
     "scss",
+    "vue"
   ],
   "stylelint.customSyntax": "postcss-scss"
 }

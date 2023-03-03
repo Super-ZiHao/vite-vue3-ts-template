@@ -4,6 +4,8 @@ import * as path from 'path';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
+import viteEslint from 'vite-plugin-eslint';
+import viteStylelint from 'vite-plugin-stylelint';
 // https://vitejs.dev/config/
 export default defineConfig({
   mode: 'development',
@@ -18,7 +20,9 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
       dirs: ['src/components'], // 搜索自动导入组件的范围
       dts: 'src/types/components.d.ts'
-    })
+    }),
+    viteEslint(),
+    viteStylelint()
   ],
   resolve: {
     alias: {
