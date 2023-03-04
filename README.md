@@ -9,6 +9,7 @@
 1. 严格按照 eslint、styleLint 规范代码开发，否则 commit 不了
 2. npm run eslint:fix  自动修复 eslint  — ps: 若无法修复请手动修复
 3. npm run stylelint:fix 自动修复 stylelint
+4. 严格按照 Angular 规范提交代码
 
 
 
