@@ -1,8 +1,6 @@
 # Vue 3 + TypeScript + Vite
 
-哔哩哔哩的一个 demo
-
-
+内置 eslint stylelint commit-hook 进行代码规范
 
 ##### 开发须知
 
